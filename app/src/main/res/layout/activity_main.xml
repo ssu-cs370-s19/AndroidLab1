@@ -8,9 +8,37 @@
     android:padding="@dimen/default_padding"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
+        android:id ="@+id/inner_layout"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/hello_text" />
+
+
+        <TextView
+            android:id= "@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id= "@+id/name_button"
+        android:text= "@string/button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>
